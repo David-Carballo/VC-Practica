@@ -1,0 +1,37 @@
+Millorar resultats:
+
+-Afegir histogrames model del Barça
+
+-Recordem que com menor la puntuació, millor.
+Canviar formar de escollir millor puntuació, ara mateix de les 25 finestres(Grid=5,5x5), escolleix la que té millors resultats.  Si la millor puntuació és menor que 0.3, decidirà que la samarreta és del Barça. (Es fan operacions de 1-score, però la llógica és aquesta).
+
+-Afegir funcions per a comparar histogrames models. Actualment, tenim chiSquare.
+
+Entrega Checkpoint:
+
+-Mida de la subimatge usada per calcular l'histograma( Es refereix a la que retallem, suposo? Haurem d'establir un valor fixe?)
+
+-Dimensions histograma(Comentar que hem tret el verd, etc)
+
+-Mida de l'histograma (nº de bins): 32, no? He provat amb nombres menors i dona resultats dolents, amb majors és similar.
+
+-Quantitat d’histogrames model usats per equip( Del Barça ja ho veurem, dels altres cap, no?)
+
+-Quantitat d’histogrames (fragments) usats per a cada imatge a reconèixer, i com s’han seleccionat :
+Ara mateix 25(Grid=5). Explicar una mica el bucle i tal.
+
+-Com heu normalitzat els histogrames per fer-los invariants a la il·luminació? 
+Això està fet? Ja ho fa la funció de normalitzar o s'ha de fer algo més?
+
+-Com heu gestionat els equips que, per no tenir, no tenen ni color a la samarreta? 
+Per ara, no li hem donat cap tracte especial.
+
+-Com heu comparat els histogrames ? Explicar compradors. Per ara, chiSquare.
+
+-Descripció d'experiments. Criteris utilitzats per a detectar la samarreta en funció de les distàncies obtingudes. 
+
+-Resultats obtinguts, mostrant el rati d'encerts global, falsos positius i falsos negatius. 
+
+-Explicar totes les funcions, si les hem copiat hem de dir de on.
+
+-Al final, annex amb el codi.
