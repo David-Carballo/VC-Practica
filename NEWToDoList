@@ -1,0 +1,40 @@
+Correció Checkpoint
+
+    - L’informe és massa escuet. No dona cap detall sobre les qüestions que es plantegen a l’enunciat
+
+        ◦ Mida de la subimatge usada per calcular l'histograma
+        ◦ Dimensions de l'histograma ( heu eliminat alguna component de color?)
+        ◦ Mida de l'histograma (nº de bins)
+        ◦ Quantitat d’histogrames model usats per equip
+        ◦ Quantitat d’histogrames (fragments) usats per a cada imatge a reconèixer, i com s’han seleccionat
+        ◦ Com heu normalitzat els histogrames per fer-los invariants a la il·luminació?
+        ◦ Com heu gestionat els equips que, per no tenir, no tenen ni color a la samarreta?
+        ◦ Com heu comparat els histogrames ?
+
+    - Cal millorar l’informe (que no vol dir extendre’l) de cara a la pràctica final.
+
+    - Utilitzeu histogrames 1D, els histogrames de color son 3D (2D si elimineu alguna component)
+
+    - Per què filtreu la imatge RGB? S’havia de filtrar l’histograma
+
+    - No té sentit normalitzar la imatge si la passeu a HSV
+
+    - Com heu tractat els píxels amb baixa saturació o poca lluminositat?
+
+Entrega final:
+
+    - Detectar equip a partir d'una imatge d'entrada
+
+    - Modificacions respecte Checkpoint
+
+    - Nous experiments i nous criteris
+
+    - Resultats (mostrar matriu de confusio)
+
+    - Enumerar noves funcions
+
+Extra:
+
+    - Utilitzar mes imatges i afegir nous equips (+Vilareal)
+    - Utilitzar altres models de color (L*a*b? , ...)
+    - Afegir "equip desconegut" (No pertany a cap equip)
