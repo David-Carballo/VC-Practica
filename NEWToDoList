@@ -2,18 +2,19 @@ Correció Checkpoint
 
     - L’informe és massa escuet. No dona cap detall sobre les qüestions que es plantegen a l’enunciat
 
-        ◦ Mida de la subimatge usada per calcular l'histograma
-        ◦ Dimensions de l'histograma ( heu eliminat alguna component de color?)
-        ◦ Mida de l'histograma (nº de bins)
-        ◦ Quantitat d’histogrames model usats per equip
-        ◦ Quantitat d’histogrames (fragments) usats per a cada imatge a reconèixer, i com s’han seleccionat
-        ◦ Com heu normalitzat els histogrames per fer-los invariants a la il·luminació?
+        ◦ Mida de la subimatge usada per calcular l'histograma -----------------------------------------------> Depèn de cada equip
+        ◦ Dimensions de l'histograma ( heu eliminat alguna component de color?) ------------------------------> Eliminem component Green
+        ◦ Mida de l'histograma (nº de bins) ------------------------------------------------------------------> 32
+        ◦ Quantitat d’histogrames model usats per equip ------------------------------------------------------> De moment 1 per equip
+        ◦ Quantitat d’histogrames (fragments) usats per a cada imatge a reconèixer, i com s’han seleccionat --> 25 (Partint imatge en 25 trossos iguals)
+        ◦ Com heu normalitzat els histogrames per fer-los invariants a la il·luminació? ----------------------> Apliquem filtre de gauss
         ◦ Com heu gestionat els equips que, per no tenir, no tenen ni color a la samarreta?
-        ◦ Com heu comparat els histogrames ?
+        ◦ Com heu comparat els histogrames ? -----------------------------------------------------------------> Calculem histograma per les components R i B per separat i dsps els concatanem de manera que queda mida 32x2 a tots els histogrames (32 bins)
+														Un cop tenim això amb la funció teamscore donat un model i tots els histogrames calcula quin és el que té més puntuació respecte aquest...
 
     - Cal millorar l’informe (que no vol dir extendre’l) de cara a la pràctica final.
 
-    - Utilitzeu histogrames 1D, els histogrames de color son 3D (2D si elimineu alguna component)
+    - Utilitzeu histogrames 1D, els histogrames de color son 3D (2D si elimineu alguna component) -------FET-------
 
     - Per què filtreu la imatge RGB? S’havia de filtrar l’histograma
 
@@ -25,7 +26,7 @@ Entrega final:
 
     - Detectar equip a partir d'una imatge d'entrada
 
-    - Modificacions respecte Checkpoint
+    - Modificacions respecte Checkpoint: Sempre utilitzem la mateixa subimatge per calcular l'histograma, normalitzem histograma no imatge...
 
     - Nous experiments i nous criteris
 
